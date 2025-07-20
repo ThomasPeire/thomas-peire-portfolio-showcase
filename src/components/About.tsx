@@ -41,7 +41,7 @@ const About = () => {
               </p>
               <p>
                 When I'm not coding, you'll find me exploring the latest in AI integration, 
-                experimenting with new DevOps tools, or documenting my technical experiments on my
+                experimenting with new DevOps tools, or documenting my technical experiments on my{" "}
                 <a href="https://docs.thomaspeire.be" target="_blank" rel="noopener noreferrer" 
                    className="text-primary hover:text-accent transition-colors underline">
                    personal documentation site
