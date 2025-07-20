@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Code, Github, Linkedin, Mail, Zap } from 'lucide-react';
+import { ChevronDown, Code, Github, Linkedin, Mail, Zap, FileText, BookOpen } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const Hero = () => {
@@ -15,6 +15,18 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Small logo/brand in top corner */}
+      <div className="absolute top-6 right-6 z-20">
+        <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-card/40 border border-border/30 backdrop-blur-sm hover:bg-card/60 transition-all duration-200 cursor-pointer group"
+             onClick={() => window.open('https://docs.thomaspeire.be', '_blank')}>
+          <div className="w-6 h-6 rounded-md bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+            <BookOpen className="w-3 h-3 text-white" />
+          </div>
+          <span className="text-sm font-medium text-foreground/80 group-hover:text-foreground transition-colors">
+            PeerNotes
+          </span>
+        </div>
+      </div>
       {/* Enhanced modern background effects with smoother transitions */}
       <div className="absolute inset-0">
         {/* Subtle grid pattern */}
@@ -139,18 +151,13 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Enhanced scroll indicator - hidden on mobile */}
+      {/* Subtle scroll indicator - hidden on mobile */}
       <div
         className="hidden md:block fixed bottom-8 left-1/2 transform -translate-x-1/2 z-10 transition-opacity duration-300"
         style={{ opacity: arrowOpacity }}
       >
-        <div className="flex flex-col items-center gap-2 animate-bounce">
-          <span className="text-xs text-muted-foreground font-medium">
-            Scroll to explore
-          </span>
-          <div className="p-2 rounded-full bg-card/50 border border-border/50 backdrop-blur-sm">
-            <ChevronDown className="h-4 w-4 text-foreground" />
-          </div>
+        <div className="p-2 rounded-full bg-card/50 border border-border/40 backdrop-blur-sm hover:bg-card/70 transition-all duration-200">
+          <ChevronDown className="h-4 w-4 text-muted-foreground/80" />
         </div>
       </div>
     </section>
