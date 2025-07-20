@@ -166,6 +166,14 @@
   .hover-glow {
     @apply transition-smooth hover:shadow-glow;
   }
+
+  .code-accent {
+    @apply font-mono text-primary/90 bg-muted/50 px-2 py-1 rounded-md border border-border/30;
+  }
+
+  .terminal-prompt {
+    @apply font-mono text-accent before:content-['$_'] before:text-primary before:mr-2;
+  }
 }
 
 @keyframes float {

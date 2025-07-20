@@ -24,18 +24,18 @@ const About = () => {
             <div className="space-y-4 text-lg text-foreground/80 leading-relaxed">
               <p>
                 I'm a passionate full-stack developer and team lead with expertise across backend development 
-                with <Badge variant="secondary" className="mx-1">C#</Badge> and 
-                <Badge variant="secondary" className="mx-1">.NET</Badge>, frontend development 
-                with <Badge variant="secondary" className="mx-1">Angular</Badge> and 
-                <Badge variant="secondary" className="mx-1">TypeScript</Badge>, and infrastructure 
-                orchestration with <Badge variant="secondary" className="mx-1">Kubernetes</Badge>.
+                with <span className="code-accent">C#</span> and 
+                <span className="code-accent">.NET</span>, frontend development 
+                with <span className="code-accent">Angular</span> and 
+                <span className="code-accent">TypeScript</span>, and infrastructure 
+                orchestration with <span className="code-accent">Kubernetes</span>.
               </p>
               <p>
                 What drives me is the intersection of development and operations - building 
                 systems that not only work beautifully but are also maintainable, secure, 
                 and scalable. I'm passionate about modern technologies like 
-                <Badge variant="secondary" className="mx-1">GraphQL</Badge> and 
-                <Badge variant="secondary" className="mx-1">RabbitMQ</Badge> for building 
+                <span className="code-accent">GraphQL</span> and 
+                <span className="code-accent">RabbitMQ</span> for building 
                 robust distributed systems.
               </p>
               <p>
