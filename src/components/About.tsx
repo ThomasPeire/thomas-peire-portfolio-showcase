@@ -39,7 +39,7 @@ const About = () => {
               <p>
                 What drives me is the intersection of development and operations - building 
                 systems that not only work beautifully but are also maintainable, secure, 
-                and scalable. I'm passionate about modern technologies like 
+                and scalable. I'm excited about modern technologies like 
                 <Badge variant="secondary" className="mx-1">GraphQL</Badge> and 
                 <Badge variant="secondary" className="mx-1">RabbitMQ</Badge> for building 
                 robust distributed systems. (Still working on that printer installation expertise though.)
