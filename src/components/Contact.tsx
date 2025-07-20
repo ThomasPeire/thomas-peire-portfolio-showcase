@@ -8,18 +8,17 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Let's Connect
+            Get In Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to discuss your next project or explore opportunities? 
-            I'd love to hear from you.
+            Feel free to connect with me for discussions about technology, development, or collaboration opportunities.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div className="animate-scale-in">
             <Card className="gradient-card border-border/50 p-8 hover-lift">
-              <h3 className="text-2xl font-bold mb-6 text-center">Get In Touch</h3>
+              <h3 className="text-2xl font-bold mb-6 text-center">Contact Information</h3>
               
               <div className="space-y-6">
                 <a 
@@ -80,43 +79,39 @@ const Contact = () => {
 
           <div className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
             <Card className="gradient-card border-border/50 p-8 hover-lift">
-              <h3 className="text-2xl font-bold mb-6 text-center">What I'm Looking For</h3>
+              <h3 className="text-2xl font-bold mb-6 text-center">Documentation & Resources</h3>
               
               <div className="space-y-4">
-                <div className="p-4 rounded-lg bg-primary/10 border border-primary/20">
-                  <h4 className="font-semibold text-primary mb-2">Full-Stack Development Roles</h4>
+                <a 
+                  href="https://docs.thomaspeire.be"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block p-4 rounded-lg bg-primary/10 border border-primary/20 hover:bg-primary/20 transition-smooth group"
+                >
+                  <h4 className="font-semibold text-primary mb-2 group-hover:text-primary/80">
+                    📚 Personal Documentation Site
+                  </h4>
                   <p className="text-sm text-muted-foreground">
-                    Positions involving C#/.NET backend development with modern frontend technologies
+                    Technical documentation, guides, and knowledge sharing
                   </p>
-                </div>
+                  <div className="text-xs text-primary mt-2">
+                    docs.thomaspeire.be →
+                  </div>
+                </a>
 
                 <div className="p-4 rounded-lg bg-accent/10 border border-accent/20">
-                  <h4 className="font-semibold text-accent mb-2">DevOps Engineering</h4>
+                  <h4 className="font-semibold text-accent mb-2">💼 Professional Experience</h4>
                   <p className="text-sm text-muted-foreground">
-                    Infrastructure automation, Kubernetes orchestration, and CI/CD pipeline design
+                    Team leadership, mentoring, and technical architecture experience
                   </p>
                 </div>
 
                 <div className="p-4 rounded-lg bg-primary/10 border border-primary/20">
-                  <h4 className="font-semibold text-primary mb-2">Technical Leadership</h4>
+                  <h4 className="font-semibold text-primary mb-2">🛠️ Technical Expertise</h4>
                   <p className="text-sm text-muted-foreground">
-                    Architecture decisions, team mentoring, and technical strategy roles
+                    Full-stack development, DevOps, and modern infrastructure solutions
                   </p>
                 </div>
-
-                <div className="p-4 rounded-lg bg-accent/10 border border-accent/20">
-                  <h4 className="font-semibold text-accent mb-2">Innovation Projects</h4>
-                  <p className="text-sm text-muted-foreground">
-                    AI integration, emerging technologies, and cutting-edge development
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-8 text-center">
-                <Button size="lg" className="gradient-primary hover-glow">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Start a Conversation
-                </Button>
               </div>
             </Card>
           </div>

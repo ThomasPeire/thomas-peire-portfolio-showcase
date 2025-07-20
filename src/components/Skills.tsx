@@ -33,13 +33,13 @@ const Skills = () => {
     {
       title: "Version Control & Collaboration",
       icon: GitBranch,
-      skills: ["Git", "GitHub", "Azure DevOps", "GitLab", "Code Review"],
+      skills: ["Git", "GitHub", "Azure DevOps", "Bitbucket", "Code Review"],
       description: "Collaborative development and workflow management"
     },
     {
-      title: "AI & Modern Tech",
+      title: "AI",
       icon: Brain,
-      skills: ["Machine Learning", "AI Integration", "API Development"],
+      skills: ["Machine Learning", "AI Integration"],
       description: "Integrating cutting-edge AI solutions"
     },
     {

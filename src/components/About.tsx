@@ -24,7 +24,7 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-lg text-foreground/80 leading-relaxed">
               <p>
-                I'm a passionate full-stack developer with expertise spanning frontend development 
+                I'm a passionate full-stack developer and team lead with expertise spanning frontend development 
                 with <Badge variant="secondary" className="mx-1">Angular</Badge> and 
                 <Badge variant="secondary" className="mx-1">TypeScript</Badge>, backend development 
                 with <Badge variant="secondary" className="mx-1">C#</Badge> and 
@@ -41,8 +41,11 @@ const About = () => {
               </p>
               <p>
                 When I'm not coding, you'll find me exploring the latest in AI integration, 
-                experimenting with new DevOps tools, or contributing to open-source projects. 
-                I'm always excited to tackle challenging problems and learn new technologies.
+                experimenting with new DevOps tools, or documenting my knowledge on my 
+                <a href="https://docs.thomaspeire.be" target="_blank" rel="noopener noreferrer" 
+                   className="text-primary hover:text-accent transition-colors underline">
+                  personal documentation site
+                </a>. I'm always excited to tackle challenging problems and learn new technologies.
               </p>
             </div>
           </div>
@@ -63,6 +66,7 @@ const About = () => {
                 <li>• DevOps pipeline implementation</li>
                 <li>• Infrastructure automation</li>
                 <li>• AI/ML integration</li>
+                <li>• Team leadership and mentoring</li>
               </ul>
             </Card>
 
