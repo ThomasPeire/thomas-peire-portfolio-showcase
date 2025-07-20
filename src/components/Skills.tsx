@@ -168,15 +168,6 @@ const Skills = () => {
             </Card>
           ))}
         </div>
-
-        {/* Modern section divider */}
-        <div className="flex items-center justify-center mt-20">
-          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent w-full max-w-md"></div>
-          <div className="px-4">
-            <div className="w-3 h-3 bg-gradient-to-r from-primary to-accent rounded-full animate-pulse"></div>
-          </div>
-          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent w-full max-w-md"></div>
-        </div>
       </div>
     </section>
   );
