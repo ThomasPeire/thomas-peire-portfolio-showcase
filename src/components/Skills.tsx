@@ -79,7 +79,7 @@ const Skills = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-transparent to-accent/3"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-transparent to-background/80"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_30%,rgba(120,119,198,0.08),transparent_60%)] bg-[radial-gradient(ellipse_at_30%_70%,rgba(255,119,198,0.08),transparent_60%)]"></div>
-      
+
       {/* Smooth top transition */}
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-background/80 to-transparent"></div>
 
@@ -95,10 +95,7 @@ const Skills = () => {
 
           <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tight">
             <span className="bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight block">
-              Technical
-            </span>
-            <span className="text-2xl md:text-3xl font-normal text-muted-foreground block mt-2">
-              Expertise & Specializations
+              Technical Expertise
             </span>
           </h2>
 
