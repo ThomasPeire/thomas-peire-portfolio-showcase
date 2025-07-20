@@ -71,10 +71,13 @@ const Hero = () => {
 
       {/* Scroll indicator at bottom of page */}
       <div 
-        className="fixed bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce z-0 transition-opacity duration-300"
-        style={{ opacity: arrowOpacity }}
+        className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-0 transition-opacity duration-300"
+        style={{ 
+          opacity: arrowOpacity * 0.6,
+          animation: 'bounce 3s infinite'
+        }}
       >
-        <ChevronDown className="h-8 w-8 text-muted-foreground" />
+        <ChevronDown className="h-6 w-6 text-muted-foreground" />
       </div>
     </section>
   );
