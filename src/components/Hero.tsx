@@ -19,13 +19,12 @@ const Hero = () => {
       <div className="absolute inset-0">
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(120,119,198,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(120,119,198,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_0%,#000_60%,transparent_100%)]"></div>
-        
         {/* Consistent background gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background/20"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-transparent to-accent/3"></div>
-        
         {/* Smooth bottom transition */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background/80 to-transparent"></div>        {/* Floating elements */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background/80 to-transparent"></div>{' '}
+        {/* Floating elements */}
         <div className="absolute top-20 left-[10%] w-32 h-32 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 animate-float blur-sm"></div>
         <div
           className="absolute top-[30%] right-[15%] w-20 h-20 rounded-full bg-gradient-to-br from-accent/25 to-accent/10 animate-float blur-sm"
@@ -39,7 +38,6 @@ const Hero = () => {
           className="absolute bottom-20 right-[25%] w-16 h-16 rounded-full bg-gradient-to-br from-accent/30 to-accent/10 animate-float blur-sm"
           style={{ animationDelay: '1s' }}
         ></div>
-
         {/* Gradient orbs */}
         <div className="absolute top-[20%] left-[70%] w-64 h-64 bg-gradient-to-br from-primary/10 via-accent/5 to-transparent rounded-full blur-3xl animate-pulse"></div>
         <div
@@ -141,9 +139,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Enhanced scroll indicator */}
+      {/* Enhanced scroll indicator - hidden on mobile */}
       <div
-        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-10 transition-opacity duration-300"
+        className="hidden md:block fixed bottom-8 left-1/2 transform -translate-x-1/2 z-10 transition-opacity duration-300"
         style={{ opacity: arrowOpacity }}
       >
         <div className="flex flex-col items-center gap-2 animate-bounce">
