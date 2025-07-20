@@ -12,7 +12,7 @@ const About = () => {
               <img 
                 src="/lovable-uploads/bf2ba6c5-4aec-4045-a754-d8261266b665.png" 
                 alt="Thomas Peire - Professional headshot"
-                className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
             </div>
