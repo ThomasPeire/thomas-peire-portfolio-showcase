@@ -8,19 +8,28 @@ const About = () => {
     <section id="about" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
-            <div className="aspect-square max-w-sm mx-auto relative overflow-hidden rounded-2xl shadow-elegant">
+          <div className="relative group">
+            {/* Background glow effects */}
+            <div className="headshot-glow-bg"></div>
+            <div className="headshot-glow-accent"></div>
+
+            {/* Main image container */}
+            <div className="headshot-container">
+              {/* Animated border ring */}
+              <div className="headshot-border"></div>
+
+              {/* Professional headshot image */}
               <img
                 src={professionalHeadshot}
                 alt="Thomas Peire - Professional headshot"
-                className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
-                style={{
-                  maskImage:
-                    'radial-gradient(ellipse 70% 80% at center 40%, black 50%, transparent 90%)',
-                  WebkitMaskImage:
-                    'radial-gradient(ellipse 70% 80% at center 40%, black 50%, transparent 90%)',
-                }}
+                className="headshot-image"
               />
+
+              {/* Subtle overlay gradient */}
+              <div className="headshot-overlay"></div>
+
+              {/* Highlight effect */}
+              <div className="headshot-highlight"></div>
             </div>
           </div>
 

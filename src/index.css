@@ -221,3 +221,141 @@
     box-shadow: 0 0 40px hsl(217, 91%, 60%, 0.6);
   }
 }
+
+/* Professional Headshot Styling */
+.headshot-container {
+  position: relative;
+  aspect-ratio: 1;
+  max-width: 24rem;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.headshot-glow-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, hsl(217, 91%, 60%, 0.2), hsl(262, 83%, 70%, 0.1), transparent);
+  border-radius: 50%;
+  filter: blur(2rem);
+  transform: scale(1.1);
+  opacity: 0.6;
+  transition: opacity 0.7s ease;
+}
+
+.headshot-glow-accent {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, transparent, hsl(217, 91%, 60%, 0.05), hsl(262, 83%, 70%, 0.15));
+  border-radius: 50%;
+  filter: blur(3rem);
+  transform: scale(1.25);
+  opacity: 0.4;
+  transition: opacity 0.7s ease;
+}
+
+.headshot-border {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(45deg, hsl(217, 91%, 60%), hsl(262, 83%, 70%), hsl(217, 91%, 60%));
+  background-size: 200% 200%;
+  animation: pulse-glow 3s ease-in-out infinite;
+  padding: 1px;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+  overflow: hidden;
+}
+
+.headshot-border::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 50%;
+  background: hsl(var(--background));
+  overflow: hidden;
+}
+
+.headshot-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: contrast(1.15) brightness(1.08) saturate(1.1);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.3), 
+    0 8px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  -webkit-mask-image: radial-gradient(
+    ellipse 90% 95% at center 35%, 
+    black 8%, 
+    rgba(0,0,0,0.95) 25%, 
+    rgba(0,0,0,0.8) 45%, 
+    rgba(0,0,0,0.6) 65%, 
+    rgba(0,0,0,0.35) 80%, 
+    rgba(0,0,0,0.1) 92%, 
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 90% 95% at center 35%, 
+    black 8%, 
+    rgba(0,0,0,0.95) 25%, 
+    rgba(0,0,0,0.8) 45%, 
+    rgba(0,0,0,0.6) 65%, 
+    rgba(0,0,0,0.35) 80%, 
+    rgba(0,0,0,0.1) 92%, 
+    transparent 100%
+  );
+}
+
+.headshot-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(to top, hsl(var(--background), 0.2), transparent, hsl(var(--background), 0.05));
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.headshot-highlight {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: 30%;
+  height: 25%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+  border-radius: 50%;
+  filter: blur(1rem);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Hover effects */
+.group:hover .headshot-glow-bg {
+  opacity: 0.8;
+}
+
+.group:hover .headshot-glow-accent {
+  opacity: 0.6;
+}
+
+.group:hover .headshot-border {
+  opacity: 0.6;
+}
+
+.group:hover .headshot-image {
+  transform: scale(1.02);
+  filter: contrast(1.2) brightness(1.1) saturate(1.15);
+}
+
+.group:hover .headshot-highlight {
+  opacity: 0.4;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 200%; }
+  100% { background-position: -200% -200%; }
+}
