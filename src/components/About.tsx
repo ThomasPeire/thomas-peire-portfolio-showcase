@@ -50,8 +50,8 @@ const About = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
-          <div className="space-y-6 animate-scale-in">
+        <div className="mt-12">
+          <div className="flex flex-col md:flex-row gap-6 justify-center items-center animate-scale-in">
             <Card className="gradient-card border-border/50 p-6 hover-lift">
               <div className="flex items-center mb-4">
                 <div className="p-3 rounded-lg bg-primary/20 mr-4">
