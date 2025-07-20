@@ -33,6 +33,8 @@ const About = () => {
                 with <Badge variant="secondary" className="mx-1">Angular</Badge> and 
                 <Badge variant="secondary" className="mx-1">TypeScript</Badge>, and infrastructure 
                 orchestration with <Badge variant="secondary" className="mx-1">Kubernetes</Badge>.
+                According to my family, I should also be great at installing printers, fixing WiFi, and 
+                magically making their phones faster 📱.
               </p>
               <p>
                 What drives me is the intersection of development and operations - building 
@@ -40,7 +42,7 @@ const About = () => {
                 and scalable. I'm passionate about modern technologies like 
                 <Badge variant="secondary" className="mx-1">GraphQL</Badge> and 
                 <Badge variant="secondary" className="mx-1">RabbitMQ</Badge> for building 
-                robust distributed systems.
+                robust distributed systems. (Still working on that printer installation expertise though.)
               </p>
               <p>
                 When I'm not coding, you'll find me exploring the latest in AI integration, 
@@ -48,7 +50,8 @@ const About = () => {
                 <a href="https://docs.thomaspeire.be" target="_blank" rel="noopener noreferrer" 
                    className="text-primary hover:text-accent transition-colors underline">
                    personal documentation site
-                </a>. I'm always excited to tackle challenging problems and learn new technologies.
+                </a>. I'm always excited to tackle challenging problems and learn new technologies 
+                — preferably ones that don't involve untangling ethernet cables under desks.
               </p>
             </div>
           </div>
