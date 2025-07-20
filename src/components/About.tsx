@@ -50,44 +50,56 @@ const About = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
-          <div className="space-y-6 animate-scale-in">
-            <Card className="gradient-card border-border/50 p-6 hover-lift">
-              <div className="flex items-center mb-4">
-                <div className="p-3 rounded-lg bg-primary/20 mr-4">
-                  <Briefcase className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold">Professional Focus</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+          <Card className="gradient-card border-border/50 p-6 hover-lift animate-scale-in">
+            <div className="flex items-center mb-4">
+              <div className="p-3 rounded-lg bg-primary/20 mr-4">
+                <Briefcase className="h-6 w-6 text-primary" />
               </div>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>• Full-stack application development</li>
-                <li>• Cloud-native architecture design</li>
-                <li>• DevOps pipeline implementation</li>
-                <li>• Infrastructure automation</li>
-                <li>• AI/ML integration</li>
-                <li>• Team leadership and mentoring</li>
-              </ul>
-            </Card>
+              <h3 className="text-xl font-semibold">Professional Focus</h3>
+            </div>
+            <ul className="space-y-2 text-muted-foreground">
+              <li>• Full-stack application development</li>
+              <li>• Cloud-native architecture design</li>
+              <li>• DevOps pipeline implementation</li>
+              <li>• Infrastructure automation</li>
+              <li>• AI/ML integration</li>
+              <li>• Team leadership and mentoring</li>
+            </ul>
+          </Card>
 
-            <Card className="gradient-card border-border/50 p-6 hover-lift">
-              <div className="flex items-center mb-4">
-                <div className="p-3 rounded-lg bg-accent/20 mr-4">
-                  <Award className="h-6 w-6 text-accent" />
-                </div>
-                <h3 className="text-xl font-semibold">Specializations</h3>
+          <Card className="gradient-card border-border/50 p-6 hover-lift animate-scale-in">
+            <div className="flex items-center mb-4">
+              <div className="p-3 rounded-lg bg-accent/20 mr-4">
+                <Award className="h-6 w-6 text-accent" />
               </div>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "Microservices", "Container Orchestration", "GitOps", 
-                  "API Design", "GraphQL", "RabbitMQ"
-                ].map((spec) => (
-                  <Badge key={spec} variant="outline" className="hover-glow">
-                    {spec}
-                  </Badge>
-                ))}
+              <h3 className="text-xl font-semibold">Specializations</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Microservices", "Container Orchestration", "GitOps", 
+                "API Design", "GraphQL", "RabbitMQ"
+              ].map((spec) => (
+                <Badge key={spec} variant="outline" className="hover-glow">
+                  {spec}
+                </Badge>
+              ))}
+            </div>
+          </Card>
+
+          <Card className="gradient-card border-border/50 p-6 hover-lift animate-scale-in">
+            <div className="flex items-center mb-4">
+              <div className="p-3 rounded-lg bg-secondary/20 mr-4">
+                <GraduationCap className="h-6 w-6 text-secondary" />
               </div>
-            </Card>
-          </div>
+              <h3 className="text-xl font-semibold">Approach</h3>
+            </div>
+            <p className="text-muted-foreground">
+              Bridging development and operations with a focus on maintainable, 
+              secure, and scalable solutions. Always exploring cutting-edge 
+              technologies while ensuring robust, production-ready systems.
+            </p>
+          </Card>
         </div>
       </div>
     </section>
