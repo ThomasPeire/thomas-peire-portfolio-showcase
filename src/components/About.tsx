@@ -52,7 +52,7 @@ const About = () => {
         
         <div className="mt-12">
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center animate-scale-in">
-            <Card className="gradient-card border-border/50 p-6 hover-lift w-80 h-64 flex flex-col">
+            <Card className="gradient-card border-border/50 p-6 hover-lift w-96 h-80 flex flex-col">
               <div className="flex items-center mb-4">
                 <div className="p-3 rounded-lg bg-primary/20 mr-4">
                   <Briefcase className="h-6 w-6 text-primary" />
@@ -69,7 +69,7 @@ const About = () => {
               </ul>
             </Card>
 
-            <Card className="gradient-card border-border/50 p-6 hover-lift w-80 h-64 flex flex-col">
+            <Card className="gradient-card border-border/50 p-6 hover-lift w-96 h-80 flex flex-col">
               <div className="flex items-center mb-4">
                 <div className="p-3 rounded-lg bg-accent/20 mr-4">
                   <Award className="h-6 w-6 text-accent" />
