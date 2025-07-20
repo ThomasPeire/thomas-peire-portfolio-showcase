@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about" className="py-20 px-6">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
           <div className="relative">
             <div className="aspect-square max-w-sm mx-auto relative overflow-hidden rounded-2xl shadow-elegant">
               <img 
@@ -21,7 +21,7 @@ const About = () => {
             </div>
           </div>
           
-          <div className="animate-fade-in-up">
+          <div className="animate-fade-in-up lg:col-span-2">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               About Thomas
             </h2>
