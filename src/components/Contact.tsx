@@ -22,7 +22,7 @@ const Contact = () => {
               
               <div className="space-y-6">
                 <a 
-                  href="mailto:thomas@thomaspeire.be"
+                  href="mailto:thomaspeire@outlook.com"
                   className="flex items-center p-4 rounded-lg bg-secondary/50 hover:bg-secondary transition-smooth group"
                 >
                   <div className="p-2 rounded-lg bg-primary/20 mr-4 group-hover:bg-primary/30 transition-smooth">
@@ -30,7 +30,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-muted-foreground">thomas@thomaspeire.be</div>
+                    <div className="text-muted-foreground">thomaspeire@outlook.com</div>
                   </div>
                 </a>
 
