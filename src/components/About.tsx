@@ -14,8 +14,8 @@ const About = () => {
                 alt="Thomas Peire - Professional headshot"
                 className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
                 style={{
-                  maskImage: 'radial-gradient(circle, black 60%, transparent 85%)',
-                  WebkitMaskImage: 'radial-gradient(circle, black 60%, transparent 85%)'
+                  maskImage: 'radial-gradient(ellipse 70% 80% at center 40%, black 50%, transparent 90%)',
+                  WebkitMaskImage: 'radial-gradient(ellipse 70% 80% at center 40%, black 50%, transparent 90%)'
                 }}
               />
             </div>
