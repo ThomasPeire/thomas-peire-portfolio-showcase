@@ -78,8 +78,8 @@ const About = () => {
               </div>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "Microservices", "Container Orchestration", "GitOps", 
-                  "API Design", "GraphQL", "RabbitMQ"
+                  "Microservices", "Container Orchestration", "C#", ".NET", 
+                  "API Design", "GraphQL", "RabbitMQ", "Event Sourcing", "Azure"
                 ].map((spec) => (
                   <span 
                     key={spec}
