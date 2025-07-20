@@ -19,12 +19,13 @@ const Hero = () => {
       <div className="absolute inset-0">
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(120,119,198,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(120,119,198,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_0%,#000_60%,transparent_100%)]"></div>
-
-        {/* Smooth background gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background/60"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/2 via-transparent to-accent/2"></div>
-
-        {/* Floating elements */}
+        
+        {/* Consistent background gradient overlays */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-transparent to-accent/3"></div>
+        
+        {/* Smooth bottom transition */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background/80 to-transparent"></div>        {/* Floating elements */}
         <div className="absolute top-20 left-[10%] w-32 h-32 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 animate-float blur-sm"></div>
         <div
           className="absolute top-[30%] right-[15%] w-20 h-20 rounded-full bg-gradient-to-br from-accent/25 to-accent/10 animate-float blur-sm"

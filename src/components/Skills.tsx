@@ -77,8 +77,11 @@ const Skills = () => {
     <section id="skills" className="py-32 px-6 relative overflow-hidden">
       {/* Enhanced background effects with smoother transitions */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-transparent to-accent/3"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-transparent to-background/80"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_30%,rgba(120,119,198,0.08),transparent_60%)] bg-[radial-gradient(ellipse_at_30%_70%,rgba(255,119,198,0.08),transparent_60%)]"></div>
+      
+      {/* Smooth top transition */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-background/80 to-transparent"></div>
 
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-20 animate-fade-in-up">
