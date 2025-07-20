@@ -76,7 +76,7 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-semibold">Specializations</h3>
               </div>
-              <div className="flex flex-wrap gap-2 flex-1 overflow-y-auto">
+              <div className="flex flex-wrap gap-2">
                 {[
                   "Microservices", "Container Orchestration", "GitOps", 
                   "API Design", "GraphQL", "RabbitMQ"
