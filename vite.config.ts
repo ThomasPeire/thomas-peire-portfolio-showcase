@@ -5,10 +5,7 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base:
-    process.env.NODE_ENV === 'production'
-      ? '/thomas-peire-portfolio-showcase/'
-      : '/',
+  base: '/', // Using custom domain, so no base path needed
   server: {
     host: '::',
     port: 8080,
