@@ -45,7 +45,8 @@ const About = () => {
                 robust distributed systems. (Still working on that printer installation expertise though.)
               </p>
               <p>
-                When I'm not coding, you'll find me exploring the latest in AI integration, 
+                When I'm not coding, you'll find me exploring the latest in AI integration 
+                (and yes, AI helped me write this very text - practicing what I preach!), 
                 experimenting with new DevOps tools, or documenting my technical experiments on my{" "}
                 <a href="https://docs.thomaspeire.be" target="_blank" rel="noopener noreferrer" 
                    className="text-primary hover:text-accent transition-colors underline">
