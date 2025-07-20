@@ -50,8 +50,8 @@ const About = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
-          <Card className="gradient-card border-border/50 p-6 hover-lift animate-scale-in">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+          <Card className="gradient-card border-border/50 p-6 hover-lift animate-scale-in md:col-span-2">
             <div className="flex items-center mb-4">
               <div className="p-3 rounded-lg bg-primary/20 mr-4">
                 <Briefcase className="h-6 w-6 text-primary" />
@@ -85,20 +85,6 @@ const About = () => {
                 </Badge>
               ))}
             </div>
-          </Card>
-
-          <Card className="gradient-card border-border/50 p-6 hover-lift animate-scale-in">
-            <div className="flex items-center mb-4">
-              <div className="p-3 rounded-lg bg-secondary/20 mr-4">
-                <GraduationCap className="h-6 w-6 text-secondary" />
-              </div>
-              <h3 className="text-xl font-semibold">Approach</h3>
-            </div>
-            <p className="text-muted-foreground">
-              Bridging development and operations with a focus on maintainable, 
-              secure, and scalable solutions. Always exploring cutting-edge 
-              technologies while ensuring robust, production-ready systems.
-            </p>
           </Card>
         </div>
       </div>
