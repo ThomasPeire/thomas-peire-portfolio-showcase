@@ -1,5 +1,4 @@
 import { Badge } from '@/components/ui/badge';
-import professionalHeadshot from '/lovable-uploads/bf2ba6c5-4aec-4045-a754-d8261266b665.png';
 
 const About = () => {
   return (
@@ -31,7 +30,7 @@ const About = () => {
 
               {/* Professional headshot image */}
               <img
-                src={professionalHeadshot}
+                src="/lovable-uploads/bf2ba6c5-4aec-4045-a754-d8261266b665.png"
                 alt="Thomas Peire - Professional headshot"
                 className="headshot-image"
               />
