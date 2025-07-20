@@ -81,9 +81,12 @@ const About = () => {
                   "Microservices", "Container Orchestration", "GitOps", 
                   "API Design", "GraphQL", "RabbitMQ"
                 ].map((spec) => (
-                  <Badge key={spec} variant="outline" className="hover-glow">
+                  <span 
+                    key={spec}
+                    className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium hover-glow transition-smooth"
+                  >
                     {spec}
-                  </Badge>
+                  </span>
                 ))}
               </div>
             </Card>
