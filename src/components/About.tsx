@@ -24,7 +24,7 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-lg text-foreground/80 leading-relaxed">
               <p>
-                I'm a passionate full-stack developer and team lead with expertise spanning frontend development 
+                I'm a passionate full-stack developer and team lead with expertise across frontend development 
                 with <Badge variant="secondary" className="mx-1">Angular</Badge> and 
                 <Badge variant="secondary" className="mx-1">TypeScript</Badge>, backend development 
                 with <Badge variant="secondary" className="mx-1">C#</Badge> and 
