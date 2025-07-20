@@ -13,6 +13,10 @@ const About = () => {
                 src="/lovable-uploads/bf2ba6c5-4aec-4045-a754-d8261266b665.png" 
                 alt="Thomas Peire - Professional headshot"
                 className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
+                style={{
+                  maskImage: 'radial-gradient(circle, black 60%, transparent 85%)',
+                  WebkitMaskImage: 'radial-gradient(circle, black 60%, transparent 85%)'
+                }}
               />
             </div>
           </div>
