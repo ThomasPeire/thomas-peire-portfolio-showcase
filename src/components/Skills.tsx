@@ -15,7 +15,7 @@ const Skills = () => {
     {
       title: "Backend Development",
       icon: Code2,
-      skills: ["C#", ".NET Core", ".NET Framework", "ASP.NET", "Entity Framework", "Microservices"],
+      skills: ["C#", ".NET Core", ".NET Framework", "ASP.NET", "Entity Framework", "Microservices", "GraphQL", "RabbitMQ", "DDD", "Neo4j", "Event Sourcing", "Azure"],
       description: "Building robust, scalable backend systems"
     },
     {
@@ -39,8 +39,8 @@ const Skills = () => {
     {
       title: "AI & Modern Tech",
       icon: Brain,
-      skills: ["Machine Learning", "AI Integration", "GraphQL", "RabbitMQ"],
-      description: "Integrating cutting-edge AI solutions and modern technologies"
+      skills: ["Machine Learning", "AI Integration", "API Development"],
+      description: "Integrating cutting-edge AI solutions"
     },
     {
       title: "Containerization",
