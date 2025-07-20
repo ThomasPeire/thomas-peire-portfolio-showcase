@@ -27,16 +27,30 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="gradient-primary hover-glow text-lg px-8 py-3">
+            <Button 
+              size="lg" 
+              className="gradient-primary hover-glow text-lg px-8 py-3"
+              onClick={() => window.location.href = 'mailto:thomas.peire@outlook.com'}
+            >
               <Mail className="mr-2 h-5 w-5" />
               Get In Touch
             </Button>
             <div className="flex gap-4">
-              <Button variant="outline" size="lg" className="hover-lift">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="hover-lift"
+                onClick={() => window.open('https://github.com/ThomasPeire', '_blank')}
+              >
                 <Github className="mr-2 h-5 w-5" />
                 GitHub
               </Button>
-              <Button variant="outline" size="lg" className="hover-lift">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="hover-lift"
+                onClick={() => window.open('https://www.linkedin.com/in/thomaspeire/', '_blank')}
+              >
                 <Linkedin className="mr-2 h-5 w-5" />
                 LinkedIn
               </Button>
@@ -45,7 +59,7 @@ const Hero = () => {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-0">
           <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
             <div className="w-1 h-3 bg-muted-foreground rounded-full mt-2 animate-pulse"></div>
           </div>
