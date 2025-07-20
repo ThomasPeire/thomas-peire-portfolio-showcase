@@ -52,14 +52,14 @@ const About = () => {
         
         <div className="mt-12">
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center animate-scale-in">
-            <Card className="gradient-card border-border/50 p-6 hover-lift">
+            <Card className="gradient-card border-border/50 p-6 hover-lift w-80 h-64 flex flex-col">
               <div className="flex items-center mb-4">
                 <div className="p-3 rounded-lg bg-primary/20 mr-4">
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold">Professional Focus</h3>
               </div>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-2 text-muted-foreground flex-1 overflow-y-auto">
                 <li>• Full-stack application development</li>
                 <li>• Cloud-native architecture design</li>
                 <li>• DevOps pipeline implementation</li>
@@ -69,14 +69,14 @@ const About = () => {
               </ul>
             </Card>
 
-            <Card className="gradient-card border-border/50 p-6 hover-lift">
+            <Card className="gradient-card border-border/50 p-6 hover-lift w-80 h-64 flex flex-col">
               <div className="flex items-center mb-4">
                 <div className="p-3 rounded-lg bg-accent/20 mr-4">
                   <Award className="h-6 w-6 text-accent" />
                 </div>
                 <h3 className="text-xl font-semibold">Specializations</h3>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 flex-1 overflow-y-auto">
                 {[
                   "Microservices", "Container Orchestration", "GitOps", 
                   "API Design", "GraphQL", "RabbitMQ"
