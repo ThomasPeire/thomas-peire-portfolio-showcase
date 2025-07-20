@@ -34,7 +34,7 @@ const About = () => {
                 <Badge variant="secondary" className="mx-1">TypeScript</Badge>, and infrastructure 
                 orchestration with <Badge variant="secondary" className="mx-1">Kubernetes</Badge>.
                 According to my family, I should also be great at installing printers, fixing WiFi, and 
-                magically making their phones faster 📱.
+                magically making their phones faster.
               </p>
               <p>
                 What drives me is the intersection of development and operations - building 
