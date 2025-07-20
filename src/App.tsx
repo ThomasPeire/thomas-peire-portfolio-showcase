@@ -8,8 +8,8 @@ import NotFound from './pages/NotFound';
 
 const queryClient = new QueryClient();
 
-// Get the basename for GitHub Pages
-const basename = import.meta.env.PROD ? '/thomas-peire-portfolio-showcase' : '';
+// Using custom domain, so no basename needed
+const basename = '';
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
