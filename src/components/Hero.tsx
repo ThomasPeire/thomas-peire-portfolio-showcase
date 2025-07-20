@@ -85,19 +85,19 @@ const Hero = () => {
 
           <p className="text-base sm:text-lg md:text-xl text-foreground/90 max-w-4xl mx-auto mb-8 sm:mb-12 leading-relaxed px-4 sm:px-0">
             Building scalable applications with{' '}
-            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-primary/10 text-primary font-semibold">
+            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-primary/10 text-primary font-medium text-sm">
               C#
             </span>{' '}
             and{' '}
-            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-primary/10 text-primary font-semibold">
+            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-primary/10 text-primary font-medium text-sm">
               .NET
             </span>
             , orchestrating infrastructure with{' '}
-            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-accent/10 text-accent font-semibold">
+            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-accent/10 text-accent font-medium text-sm">
               Kubernetes
             </span>
             , and implementing cutting-edge{' '}
-            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-accent/10 text-accent font-semibold">
+            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-accent/10 text-accent font-medium text-sm">
               DevOps
             </span>{' '}
             practices.
