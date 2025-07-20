@@ -23,11 +23,11 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-lg text-foreground/80 leading-relaxed">
               <p>
-                I'm a passionate full-stack developer and team lead with expertise across frontend development 
-                with <Badge variant="secondary" className="mx-1">Angular</Badge> and 
-                <Badge variant="secondary" className="mx-1">TypeScript</Badge>, backend development 
+                I'm a passionate full-stack developer and team lead with expertise across backend development 
                 with <Badge variant="secondary" className="mx-1">C#</Badge> and 
-                <Badge variant="secondary" className="mx-1">.NET</Badge>, and infrastructure 
+                <Badge variant="secondary" className="mx-1">.NET</Badge>, frontend development 
+                with <Badge variant="secondary" className="mx-1">Angular</Badge> and 
+                <Badge variant="secondary" className="mx-1">TypeScript</Badge>, and infrastructure 
                 orchestration with <Badge variant="secondary" className="mx-1">Kubernetes</Badge>.
               </p>
               <p>
