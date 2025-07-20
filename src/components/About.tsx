@@ -7,23 +7,37 @@ const About = () => {
     <section id="about" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="relative">
+            <div className="aspect-square max-w-sm mx-auto relative overflow-hidden rounded-2xl shadow-elegant">
+              <img 
+                src="/lovable-uploads/bf2ba6c5-4aec-4045-a754-d8261266b665.png" 
+                alt="Thomas Peire - Professional headshot"
+                className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
           <div className="animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               About Thomas
             </h2>
             <div className="space-y-4 text-lg text-foreground/80 leading-relaxed">
               <p>
-                I'm a passionate full-stack developer with a deep love for creating robust, 
-                scalable applications using modern technologies. My expertise spans from 
-                backend development with <Badge variant="secondary" className="mx-1">C#</Badge> 
-                and <Badge variant="secondary" className="mx-1">.NET</Badge> to orchestrating 
-                complex infrastructure with <Badge variant="secondary" className="mx-1">Kubernetes</Badge>.
+                I'm a passionate full-stack developer with expertise spanning frontend development 
+                with <Badge variant="secondary" className="mx-1">Angular</Badge> and 
+                <Badge variant="secondary" className="mx-1">TypeScript</Badge>, backend development 
+                with <Badge variant="secondary" className="mx-1">C#</Badge> and 
+                <Badge variant="secondary" className="mx-1">.NET</Badge>, and infrastructure 
+                orchestration with <Badge variant="secondary" className="mx-1">Kubernetes</Badge>.
               </p>
               <p>
                 What drives me is the intersection of development and operations - building 
                 systems that not only work beautifully but are also maintainable, secure, 
-                and scalable. I believe in the power of automation, clean code, and 
-                continuous learning.
+                and scalable. I'm passionate about modern technologies like 
+                <Badge variant="secondary" className="mx-1">GraphQL</Badge> and 
+                <Badge variant="secondary" className="mx-1">RabbitMQ</Badge> for building 
+                robust distributed systems.
               </p>
               <p>
                 When I'm not coding, you'll find me exploring the latest in AI integration, 
@@ -32,7 +46,9 @@ const About = () => {
               </p>
             </div>
           </div>
-
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
           <div className="space-y-6 animate-scale-in">
             <Card className="gradient-card border-border/50 p-6 hover-lift">
               <div className="flex items-center mb-4">
@@ -60,7 +76,7 @@ const About = () => {
               <div className="flex flex-wrap gap-2">
                 {[
                   "Microservices", "Container Orchestration", "GitOps", 
-                  "API Design", "Database Architecture", "Security Best Practices"
+                  "API Design", "GraphQL", "RabbitMQ"
                 ].map((spec) => (
                   <Badge key={spec} variant="outline" className="hover-glow">
                     {spec}
