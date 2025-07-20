@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-32 px-6 relative overflow-hidden"
+      className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 relative overflow-hidden"
       aria-labelledby="about-heading"
     >
       {/* Enhanced background with smoother transitions */}
@@ -32,7 +32,7 @@ const About = () => {
       ></div>
 
       <div className="container mx-auto relative z-10">
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 sm:gap-16 lg:gap-20 items-center">
           <figure
             className="relative group order-2 xl:order-1"
             itemScope
@@ -89,7 +89,7 @@ const About = () => {
             <header>
               <h1
                 id="about-heading"
-                className="text-5xl md:text-7xl font-black mb-8 tracking-tight"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 sm:mb-8 tracking-tight"
               >
                 <span
                   className="bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight block"
@@ -98,7 +98,7 @@ const About = () => {
                   Thomas
                 </span>
                 <span
-                  className="text-2xl md:text-3xl font-normal text-muted-foreground block mt-2"
+                  className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal text-muted-foreground block mt-2"
                   itemProp="jobTitle"
                 >
                   Full-Stack Developer
@@ -106,7 +106,7 @@ const About = () => {
               </h1>
             </header>
 
-            <div className="space-y-6 text-base md:text-lg text-foreground/90 leading-relaxed">
+            <div className="space-y-4 sm:space-y-6 text-sm sm:text-base md:text-lg text-foreground/90 leading-relaxed">
               <p>
                 I'm a passionate full-stack developer and team lead with
                 expertise across backend development with{' '}

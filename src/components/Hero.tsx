@@ -48,32 +48,32 @@ const Hero = () => {
         ></div>
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 text-center relative z-10">
         <div className="animate-fade-in-up">
           {/* Enhanced typography */}
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black mb-6 tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black mb-4 sm:mb-6 tracking-tight">
             <span className="bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-none block">
               Thomas Peire
             </span>
           </h1>
 
-          <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card/50 border border-border/50 backdrop-blur-sm">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-6 sm:mb-8">
+            <div className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-card/50 border border-border/50 backdrop-blur-sm">
               <Code className="w-4 h-4 text-primary" />
-              <span className="text-lg font-semibold text-foreground">
+              <span className="text-sm sm:text-base lg:text-lg font-semibold text-foreground">
                 Full-Stack Developer
               </span>
             </div>
-            <div className="w-2 h-2 bg-border rounded-full"></div>
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card/50 border border-border/50 backdrop-blur-sm">
+            <div className="hidden sm:block w-2 h-2 bg-border rounded-full"></div>
+            <div className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-card/50 border border-border/50 backdrop-blur-sm">
               <Zap className="w-4 h-4 text-accent" />
-              <span className="text-lg font-semibold text-foreground">
+              <span className="text-sm sm:text-base lg:text-lg font-semibold text-foreground">
                 DevOps Engineer
               </span>
             </div>
           </div>
 
-          <p className="text-lg md:text-xl text-foreground/90 max-w-4xl mx-auto mb-12 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-foreground/90 max-w-4xl mx-auto mb-8 sm:mb-12 leading-relaxed px-4 sm:px-0">
             Building scalable applications with{' '}
             <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-primary/10 text-primary font-semibold">
               C#
@@ -93,29 +93,29 @@ const Hero = () => {
             practices.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12 sm:mb-16 px-4 sm:px-0">
             <Button
               size="lg"
-              className="group relative overflow-hidden bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="w-full sm:w-auto group relative overflow-hidden bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
               onClick={() =>
                 (window.location.href = 'mailto:thomas.peire@outlook.com')
               }
             >
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Mail className="mr-3 h-5 w-5 relative z-10" />
+              <Mail className="mr-2 sm:mr-3 h-4 sm:h-5 w-4 sm:w-5 relative z-10" />
               <span className="relative z-10">Get In Touch</span>
             </Button>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
               <Button
                 variant="outline"
                 size="lg"
-                className="group relative overflow-hidden bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 hover:bg-primary/5 text-lg px-6 py-4 rounded-2xl transition-all duration-300 hover:scale-105"
+                className="w-full sm:w-auto group relative overflow-hidden bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 hover:bg-primary/5 text-base sm:text-lg px-4 sm:px-6 py-3 sm:py-4 rounded-2xl transition-all duration-300 hover:scale-105"
                 onClick={() =>
                   window.open('https://github.com/ThomasPeire', '_blank')
                 }
               >
-                <Github className="mr-2 h-5 w-5 group-hover:text-primary transition-colors" />
+                <Github className="mr-2 h-4 sm:h-5 w-4 sm:w-5 group-hover:text-primary transition-colors" />
                 <span className="group-hover:text-primary transition-colors">
                   GitHub
                 </span>
@@ -123,7 +123,7 @@ const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="group relative overflow-hidden bg-card/50 backdrop-blur-sm border-border/50 hover:border-accent/50 hover:bg-accent/5 text-lg px-6 py-4 rounded-2xl transition-all duration-300 hover:scale-105"
+                className="w-full sm:w-auto group relative overflow-hidden bg-card/50 backdrop-blur-sm border-border/50 hover:border-accent/50 hover:bg-accent/5 text-base sm:text-lg px-4 sm:px-6 py-3 sm:py-4 rounded-2xl transition-all duration-300 hover:scale-105"
                 onClick={() =>
                   window.open(
                     'https://www.linkedin.com/in/thomaspeire/',
@@ -131,7 +131,7 @@ const Hero = () => {
                   )
                 }
               >
-                <Linkedin className="mr-2 h-5 w-5 group-hover:text-accent transition-colors" />
+                <Linkedin className="mr-2 h-4 sm:h-5 w-4 sm:w-5 group-hover:text-accent transition-colors" />
                 <span className="group-hover:text-accent transition-colors">
                   LinkedIn
                 </span>

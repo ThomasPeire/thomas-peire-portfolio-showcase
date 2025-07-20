@@ -226,10 +226,23 @@
 .headshot-container {
   position: relative;
   aspect-ratio: 1;
-  max-width: 24rem;
+  max-width: 16rem;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 50%;
+}
+
+@media (min-width: 640px) {
+  .headshot-container {
+    max-width: 20rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .headshot-container {
+    max-width: 24rem;
+  }
 }
 
 .headshot-glow-bg {
@@ -358,4 +371,42 @@
 @keyframes shimmer {
   0% { background-position: 200% 200%; }
   100% { background-position: -200% -200%; }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  /* Improve touch targets */
+  .hover\:scale-110:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Reduce motion for battery optimization */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-pulse,
+    .animate-bounce,
+    .animate-float,
+    .animate-fade-in-up,
+    .animate-scale-in {
+      animation: none;
+    }
+  }
+  
+  /* Improve text readability on small screens */
+  .leading-tight {
+    line-height: 1.1;
+  }
+  
+  /* Better button spacing */
+  .gap-6 {
+    gap: 1rem;
+  }
+  
+  /* Reduce background effects on mobile for performance */
+  .blur-3xl {
+    filter: blur(2rem);
+  }
+  
+  .blur-2xl {
+    filter: blur(1.5rem);
+  }
 }

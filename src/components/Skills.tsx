@@ -74,7 +74,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-32 px-6 relative overflow-hidden">
+    <section id="skills" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 relative overflow-hidden">
       {/* Enhanced background effects with smoother transitions */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-transparent to-accent/3"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-transparent to-background/80"></div>
@@ -84,28 +84,28 @@ const Skills = () => {
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-background/80 to-transparent"></div>
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-20 animate-fade-in-up">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20 animate-fade-in-up px-4 sm:px-0">
           {/* Modern section header */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 mb-8">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 mb-6 sm:mb-8">
             <Zap className="w-4 h-4 text-primary animate-pulse" />
-            <span className="text-sm font-medium text-primary">
+            <span className="text-xs sm:text-sm font-medium text-primary">
               Technical Skills
             </span>
           </div>
 
-          <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 sm:mb-8 tracking-tight">
             <span className="bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight block">
               Technical Expertise
             </span>
           </h2>
 
-          <p className="text-lg md:text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
             A comprehensive skill set covering modern development practices,
             infrastructure management, and emerging technologies.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {skillCategories.map((category, index) => (
             <Card
               key={category.title}

@@ -15,7 +15,7 @@ import {
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-32 px-6 relative overflow-hidden">
+    <section id="contact" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 relative overflow-hidden">
       {/* Enhanced background effects with smoother transitions */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-transparent to-accent/3"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/80"></div>
