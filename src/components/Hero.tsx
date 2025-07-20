@@ -28,12 +28,12 @@ const Hero = () => {
             Thomas Peire
           </h1>
           <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8 font-light">
-            Full-Stack Developer & DevOps Engineer
+            Full-Stack Developer <span className="text-accent/70">&&</span> DevOps Engineer
           </h2>
           <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-12 leading-relaxed">
-            Passionate about building scalable applications with <span className="text-primary font-semibold">C#</span> and <span className="text-primary font-semibold">.NET</span>, 
-            orchestrating infrastructure with <span className="text-accent font-semibold">Kubernetes</span>, 
-            and implementing modern <span className="text-accent font-semibold">DevOps</span> practices.
+            Passionate about building scalable applications with <span className="text-primary font-semibold">C#</span> and <span className="text-primary font-semibold">.NET</span><span className="text-muted-foreground/60">;</span> 
+            orchestrating infrastructure with <span className="text-accent font-semibold">Kubernetes</span><span className="text-muted-foreground/60">;</span> 
+            and implementing modern <span className="text-accent font-semibold">DevOps</span> practices<span className="text-muted-foreground/60">.</span>
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
