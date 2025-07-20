@@ -58,7 +58,7 @@ const Skills = () => {
             Technical Expertise
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive skill set spanning modern development practices, 
+            A comprehensive skill set covering modern development practices, 
             infrastructure management, and emerging technologies.
           </p>
         </div>
