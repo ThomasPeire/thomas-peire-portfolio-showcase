@@ -50,8 +50,7 @@ const About = () => {
                 <a href="https://docs.thomaspeire.be" target="_blank" rel="noopener noreferrer" 
                    className="text-primary hover:text-accent transition-colors underline">
                    personal documentation site
-                </a>. I'm always excited to tackle challenging problems and learn new technologies 
-                — preferably ones that don't involve untangling ethernet cables under desks.
+                </a>. I'm always excited to tackle challenging problems and learn new technologies.
               </p>
             </div>
           </div>
