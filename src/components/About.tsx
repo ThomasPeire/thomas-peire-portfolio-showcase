@@ -50,8 +50,8 @@ const About = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          <Card className="gradient-card border-border/50 p-6 hover-lift animate-scale-in md:col-span-2">
+        <div className="flex flex-wrap justify-center gap-6 mt-16">
+          <Card className="gradient-card border-border/50 p-6 hover-lift animate-scale-in max-w-md">
             <div className="flex items-center mb-4">
               <div className="p-3 rounded-lg bg-primary/20 mr-4">
                 <Briefcase className="h-6 w-6 text-primary" />
@@ -68,7 +68,7 @@ const About = () => {
             </ul>
           </Card>
 
-          <Card className="gradient-card border-border/50 p-6 hover-lift animate-scale-in">
+          <Card className="gradient-card border-border/50 p-6 hover-lift animate-scale-in max-w-md">
             <div className="flex items-center mb-4">
               <div className="p-3 rounded-lg bg-accent/20 mr-4">
                 <Award className="h-6 w-6 text-accent" />
