@@ -1,7 +1,17 @@
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 
 const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const arrowOpacity = Math.max(0, 1 - scrollY / 200);
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated background elements */}
@@ -60,8 +70,11 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator at bottom of page */}
-      <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce z-0">
-        <ChevronDown className="h-6 w-6 text-muted-foreground" />
+      <div 
+        className="fixed bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce z-0 transition-opacity duration-300"
+        style={{ opacity: arrowOpacity }}
+      >
+        <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </div>
     </section>
   );
