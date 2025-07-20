@@ -1,13 +1,31 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Specific crawlers
 User-agent: Googlebot
 Allow: /
 
-User-agent: Bingbot
+User-agent: Bingbot  
 Allow: /
 
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: SlackBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.thomaspeire.be/sitemap.xml
+
+# Crawl delay (optional - 1 second delay)
+Crawl-delay: 1
 Allow: /
 
 User-agent: *
