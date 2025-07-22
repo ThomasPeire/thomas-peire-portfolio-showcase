@@ -1,13 +1,16 @@
 # Allow all web crawlers
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
-# Specific crawlers
+# Specific crawlers optimization
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
-User-agent: Bingbot  
+User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
@@ -24,9 +27,5 @@ Allow: /
 # Sitemap location
 Sitemap: https://www.thomaspeire.be/sitemap.xml
 
-# Crawl delay (optional - 1 second delay)
-Crawl-delay: 1
-Allow: /
-
-User-agent: *
-Allow: /
+# Host declaration for search engines
+Host: https://www.thomaspeire.be
