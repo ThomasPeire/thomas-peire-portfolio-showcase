@@ -60,12 +60,13 @@ const About = () => {
               {/* Professional headshot image */}
               <img
                 src="/lovable-uploads/bf2ba6c5-4aec-4045-a754-d8261266b665.png"
-                alt="Thomas Peire - Professional Full-Stack Developer and DevOps Engineer headshot portrait"
+                alt="Thomas Peire - Professional Full-Stack Developer and DevOps Engineer headshot portrait. Photo by RTpix Photography."
                 className="headshot-image"
                 itemProp="image"
                 width="400"
                 height="400"
                 loading="lazy"
+                title="Thomas Peire - Professional Developer Portfolio Photo by RTpix Photography"
               />
 
               {/* Subtle overlay gradient */}
