@@ -93,28 +93,52 @@
 /* ─── Animations ─── */
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.97); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes fillBar {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-fade-in-up {
@@ -138,7 +162,7 @@
   width: max-content;
 }
 
-.marquee-track:hover {
+.marquee-track:hover .animate-marquee {
   animation-play-state: paused;
 }
 
@@ -173,11 +197,15 @@
 }
 
 @media (min-width: 640px) {
-  .headshot-wrap { max-width: 20rem; }
+  .headshot-wrap {
+    max-width: 20rem;
+  }
 }
 
 @media (min-width: 1024px) {
-  .headshot-wrap { max-width: 18rem; }
+  .headshot-wrap {
+    max-width: 18rem;
+  }
 }
 
 .headshot-wrap img {
@@ -185,11 +213,11 @@
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  transition: transform 0.4s ease;
+  transition: filter 0.4s ease;
 }
 
 .headshot-wrap:hover img {
-  transform: scale(1.03);
+  filter: brightness(1.05);
 }
 
 /* ─── Section spacing ─── */

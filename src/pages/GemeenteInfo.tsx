@@ -13,15 +13,14 @@ const GemeenteInfo = () => {
           <ArrowLeft className="w-4 h-4" />
           Back
         </Link>
-        <h1 className="text-sm font-semibold text-foreground">
+        <p className="text-sm font-semibold text-foreground">
           Lokale informatie in jouw gemeente
-        </h1>
+        </p>
       </header>
 
       {/* Embedded form */}
-      <div className="flex-1 relative">
+      <main className="flex-1 relative">
         <iframe
-          data-tally-src="https://tally.so/r/Np0QAG?transparentBackground=1"
           src="https://tally.so/r/Np0QAG?transparentBackground=1"
           width="100%"
           height="100%"
@@ -30,8 +29,9 @@ const GemeenteInfo = () => {
           marginWidth={0}
           title="Lokale informatie in jouw gemeente"
           className="absolute inset-0 w-full h-full"
+          sandbox="allow-scripts allow-forms allow-same-origin allow-popups"
         />
-      </div>
+      </main>
     </div>
   );
 };

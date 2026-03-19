@@ -25,15 +25,17 @@ const Hero = () => {
 
         {/* Intro */}
         <h1
-          className={`text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-snug mb-6 ${loaded ? 'animate-fade-in-up' : 'opacity-0'}`}
+          className={`text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-snug mb-2 ${loaded ? 'animate-fade-in-up' : 'opacity-0'}`}
           style={{ animationDelay: '80ms' }}
         >
           Hey, I'm Thomas.
-          <br />
-          <span className="text-muted-foreground font-normal">
-            I build things for the web.
-          </span>
         </h1>
+        <p
+          className={`text-3xl sm:text-4xl md:text-5xl font-light tracking-tight leading-snug mb-6 text-muted-foreground ${loaded ? 'animate-fade-in-up' : 'opacity-0'}`}
+          style={{ animationDelay: '120ms' }}
+        >
+          I build things for the web.
+        </p>
 
         <p
           className={`text-base sm:text-lg text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed ${loaded ? 'animate-fade-in-up' : 'opacity-0'}`}

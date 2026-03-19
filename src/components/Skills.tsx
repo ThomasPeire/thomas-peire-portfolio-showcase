@@ -1,4 +1,5 @@
 import { ExternalLink, Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
 
 /* ─── Skill data ─── */
 
@@ -71,19 +72,28 @@ const SkillBar = ({
   name,
   level,
   delay,
+  visible,
 }: {
   name: string;
   level: number;
   delay: number;
+  visible: boolean;
 }) => (
   <div className="mb-4 last:mb-0">
     <div className="flex justify-between items-baseline mb-1.5">
       <span className="text-sm font-medium text-foreground">{name}</span>
       <span className="text-xs text-muted-foreground">{level}%</span>
     </div>
-    <div className="skill-bar">
+    <div
+      className="skill-bar"
+      role="progressbar"
+      aria-valuenow={level}
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-label={`${name} skill level`}
+    >
       <div
-        className="skill-bar-fill"
+        className={`skill-bar-fill ${visible ? 'animate' : ''}`}
         style={{
           width: `${level}%`,
           animationDelay: `${delay}ms`,
@@ -96,6 +106,27 @@ const SkillBar = ({
 /* ─── Main component ─── */
 
 const Skills = () => {
+  const skillsRef = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = skillsRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       {/* ─── Skills ─── */}
@@ -109,7 +140,10 @@ const Skills = () => {
           </p>
 
           {/* Two columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 mb-14">
+          <div
+            ref={skillsRef}
+            className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 mb-14"
+          >
             {/* Developer */}
             <div>
               <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
@@ -122,6 +156,7 @@ const Skills = () => {
                   name={skill.name}
                   level={skill.level}
                   delay={200 + i * 80}
+                  visible={visible}
                 />
               ))}
             </div>
@@ -138,6 +173,7 @@ const Skills = () => {
                   name={skill.name}
                   level={skill.level}
                   delay={200 + i * 80}
+                  visible={visible}
                 />
               ))}
             </div>
