@@ -1,3 +1,4 @@
+import { useScrollReveal } from '@/hooks/use-scroll-reveal';
 import { ExternalLink, Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
@@ -22,20 +23,9 @@ const opsSkills = [
 ];
 
 const toolsList = [
-  'Git',
-  'GitHub',
-  'Azure DevOps',
-  'Bitbucket',
-  'Neo4j',
-  'Machine Learning',
-  'AI Integration',
-  'Helm',
-  'Automation',
-  'HTML/CSS',
-  'JavaScript',
-  'AngularJS',
-  'Data Analysis',
-  'Code Review',
+  'Git', 'GitHub', 'Azure DevOps', 'Bitbucket', 'Neo4j',
+  'Machine Learning', 'AI Integration', 'Helm', 'Automation',
+  'HTML/CSS', 'JavaScript', 'AngularJS', 'Data Analysis', 'Code Review',
 ];
 
 const contactLinks = [
@@ -93,10 +83,10 @@ const SkillBar = ({
       aria-label={`${name} skill level`}
     >
       <div
-        className={`skill-bar-fill ${visible ? 'animate' : ''}`}
+        className="skill-bar-fill"
         style={{
-          width: `${level}%`,
-          animationDelay: `${delay}ms`,
+          width: visible ? `${level}%` : '0%',
+          transition: `width 1s cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
         }}
       />
     </div>
@@ -107,7 +97,10 @@ const SkillBar = ({
 
 const Skills = () => {
   const skillsRef = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
+  const [barsVisible, setBarsVisible] = useState(false);
+  const { ref: contactRef, visible: contactVisible } = useScrollReveal();
+  const { ref: skillsHeaderRef, visible: skillsHeaderVisible } =
+    useScrollReveal();
 
   useEffect(() => {
     const el = skillsRef.current;
@@ -116,7 +109,7 @@ const Skills = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setVisible(true);
+          setBarsVisible(true);
           observer.disconnect();
         }
       },
@@ -132,12 +125,19 @@ const Skills = () => {
       {/* ─── Skills ─── */}
       <section id="skills" className="section-gap px-6 sm:px-8">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-            My skills
-          </h2>
-          <p className="text-muted-foreground mb-12 max-w-lg">
-            Part developer, part ops engineer. Here's what I bring to the table.
-          </p>
+          <div ref={skillsHeaderRef}>
+            <h2
+              className={`text-2xl sm:text-3xl font-bold tracking-tight mb-4 transition-all duration-700 ${skillsHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+            >
+              My skills
+            </h2>
+            <p
+              className={`text-muted-foreground mb-12 max-w-lg transition-all duration-700 delay-100 ${skillsHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+            >
+              Part developer, part ops engineer. Here's what I bring to the
+              table.
+            </p>
+          </div>
 
           {/* Two columns */}
           <div
@@ -155,8 +155,8 @@ const Skills = () => {
                   key={skill.name}
                   name={skill.name}
                   level={skill.level}
-                  delay={200 + i * 80}
-                  visible={visible}
+                  delay={i * 80}
+                  visible={barsVisible}
                 />
               ))}
             </div>
@@ -172,8 +172,8 @@ const Skills = () => {
                   key={skill.name}
                   name={skill.name}
                   level={skill.level}
-                  delay={200 + i * 80}
-                  visible={visible}
+                  delay={i * 80}
+                  visible={barsVisible}
                 />
               ))}
             </div>
@@ -188,7 +188,7 @@ const Skills = () => {
               {toolsList.map((tool) => (
                 <span
                   key={tool}
-                  className="text-xs px-3 py-1.5 rounded-full bg-muted text-muted-foreground font-medium"
+                  className="text-xs px-3 py-1.5 rounded-full bg-muted text-muted-foreground font-medium hover:bg-foreground hover:text-background transition-colors duration-200 cursor-default"
                 >
                   {tool}
                 </span>
@@ -200,19 +200,26 @@ const Skills = () => {
 
       {/* ─── Contact ─── */}
       <section id="contact" className="section-gap px-6 sm:px-8 bg-muted/40">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
+        <div ref={contactRef} className="container mx-auto max-w-3xl">
+          <h2
+            className={`text-2xl sm:text-3xl font-bold tracking-tight mb-4 transition-all duration-700 ${contactVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+          >
             Get in touch
           </h2>
-          <p className="text-muted-foreground mb-10">
+          <p
+            className={`text-muted-foreground mb-10 transition-all duration-700 delay-100 ${contactVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+          >
             Want to exchange ideas or just geek out about tech? Always happy to
             connect.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-            {contactLinks.map((link) => {
+            {contactLinks.map((link, i) => {
               const content = (
-                <div className="flex items-center gap-3 p-4 rounded-xl border border-border bg-background hover:border-foreground/15 transition-colors group">
+                <div
+                  className={`flex items-center gap-3 p-4 rounded-xl border border-border bg-background hover:border-foreground/15 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-300 group ${contactVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+                  style={{ transitionDelay: `${200 + i * 80}ms` }}
+                >
                   <link.icon className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors flex-shrink-0" />
                   <div className="min-w-0">
                     <div className="text-xs text-muted-foreground font-medium uppercase tracking-wide">
@@ -223,7 +230,7 @@ const Skills = () => {
                     </div>
                   </div>
                   {link.external && (
-                    <ExternalLink className="w-3 h-3 text-muted-foreground/40 ml-auto flex-shrink-0" />
+                    <ExternalLink className="w-3 h-3 text-muted-foreground/40 ml-auto flex-shrink-0 group-hover:text-foreground/40 transition-colors" />
                   )}
                 </div>
               );
@@ -248,7 +255,8 @@ const Skills = () => {
             href="https://docs.thomaspeire.be"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between p-4 rounded-xl border border-border bg-background hover:border-foreground/15 transition-colors group"
+            className={`flex items-center justify-between p-4 rounded-xl border border-border bg-background hover:border-foreground/15 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-300 group ${contactVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+            style={{ transitionDelay: '520ms' }}
           >
             <div>
               <div className="text-sm font-semibold text-foreground">
