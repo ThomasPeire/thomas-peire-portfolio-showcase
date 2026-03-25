@@ -10,6 +10,14 @@ export default defineConfig(({ mode }) => ({
     host: '::',
     port: 8080,
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+        'gemeente-info-vragenlijst': path.resolve(__dirname, 'gemeente-info-vragenlijst.html'),
+      },
+    },
+  },
   plugins: [react(), mode === 'development' && componentTagger()].filter(
     Boolean
   ),
