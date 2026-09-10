@@ -277,6 +277,12 @@ const Skills = () => {
           <p className="text-xs text-muted-foreground/60">
             &copy; {new Date().getFullYear()} Thomas Peire
           </p>
+          <a
+            href="/paws-and-pines/privacy/"
+            className="text-sm text-muted-foreground hover:text-foreground underline underline-offset-4 text-center"
+          >
+            Paws &amp; Pines privacy policy
+          </a>
           <div className="flex items-center gap-5">
             <a
               href="https://github.com/ThomasPeire"
